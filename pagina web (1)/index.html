@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Recetas Saludables</title>	
+		<link href="style.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+  	<body>
+		<div class="titulo">
+			<h1><a href="index.php">Recetas Saludables</a></h1>
+			<div class="menu central">
+				<div class="menu-item flotante">
+					<p class="menu-item">
+						<br>
+						<img src="images/recetario.png" alt="Recetas" class="icon">Recetas 
+					</p>
+					<div class="subtemas-flotante">
+							<div class="elementosP">
+							<p>Ingredientes</p>
+								<a href="paginapollo.html">
+									<img src="images/pollo.png" alt="planificador" class="icon">Pollo
+								</a>
+							<br>
+								<a href="paginapescado.html">
+									<img src="images/pescado.png" alt="planificador" class="icon">Pescado
+								</a>
+							<br>
+								<a href="paginaatun.html">
+									<img src="images/atun.png" alt="planificador" class="icon">Atun
+								</a>
+							<br>
+							<a href="paginavegana.html">
+								<img src="images/vegano.png" alt="planificador" class="icon">Veganas
+							</a>
+							<br>
+							<a href="paginavegetariana.html">
+								<img src="images/vegetariano.png" alt="planificador" class="icon">Vegetarianas
+							</a>
+							<br>
+							<a href="paginaquinoa.html">
+								<img src="images/quinoa.png" alt="planificador" class="icon">Quinoa
+							</a>
+							</div>
+					</div>		
+						
+
+				</div>		
+				
+			</div>
+			<div class="menu">
+
+				<a href="inicio-sesion.php">inicia sesion</a>
+			</div>
+			  </div>
+		</div>	
+	<main>	
+<div class="contenedor">
+	
+    <!-- Sección 1 -->
+    <div class="carrusel">
+		<h1>Top 10 en recetas</h1>
+		<button class="carrusel-btn btn-prev">⟨</button>
+		<div class="carrusel-imagenes">
+		  <!-- 10 imágenes -->
+		  <a href="pagina1.html"><img src="recetas/R1.jpg" alt="Imagen 1">Pollo a la plancha con ensalada de aguacate y tomate</a>
+		  <a href="pagina2.html"><img src="recetas/R2.png" alt="Imagen 2">Pollo al curry con arroz integral</a>
+		  <a href="pagina3.html"><img src="recetas/R3.png" alt="Imagen 3">Pollo relleno de espinacas y queso ricotta con puré de batata</a>
+		  <a href="pagina4.html"><img src="recetas/R4.png" alt="Imagen 4">Pollo al limón con espárragos</a>
+		  <a href="pagina5.html"><img src="recetas/R5.png" alt="Imagen 5">Pollo en salsa de mostaza y miel con quinoa</a>
+		  <a href="pagina1atun.html"><img src="recetas/R1ATUN.png" alt="Imagen 6">Ensalada fresca de atún y aguacate</a>
+		  <a href="pagina2atun.html"><img src="recetas/R2ATUN.png" alt="Imagen 7">Tacos de atún con repollo y salsa de yogur</a>
+		  <a href="pagina3atun.html"><img src="recetas/R3ATUN.png" alt="Imagen 8">Atún al horno con verduras asadas</a>
+		  <a href="pagina4atun.html"><img src="recetas/R4ATUN.png" alt="Imagen 9">Ensalada de atún y garbanzos</a>
+		  <a href="pagina5atun.html"><img src="recetas/R5ATUN.png" alt="Imagen 10">Atún a la parrilla con salsa de aguacate y cilantro</a>
+		</div>
+		<button class="carrusel-btn btn-next">⟩</button>
+	  </div>
+	  <div class="carrusel">
+		<h1>Top recetas de ensaladas</h1>
+		<button class="carrusel-btn btn-prev">⟨</button>
+		<div class="carrusel-imagenes">
+		  <a href="pagina1atun.html"><img src="recetas/R1ATUN.png" alt="Imagen 1"><BR>Ensalada fresca de atún y aguacate</a>
+		  <a href="pagina4atun.html"><img src="recetas/R4ATUN.png" alt="Imagen 2"><BR>Ensalada de atún y garbanzos</a>
+		  <a href="pagina1vegetariana.html"><img src="recetas/R1VEGETARIANA.png" alt="Imagen 3"><BR>Ensalada de quinoa con verduras asadas</a>
+		  <a href="pagina1vegana.html"><img src="recetas/R1VEGANA.jpg.png" alt="Imagen 4"><BR>Ensalada de garbanzos con aguacate y tomate</a>
+		  <a href="pagina1quinoa.html"><img src="recetas/R1QUINOA.png" alt="Imagen 5"><BR>Ensalada de quinoa con pepino, tomate y limón</a>
+		</div>
+		<button class="carrusel-btn btn-next">⟩</button>
+	  </div>
+
+
+
+<script>
+    // Selecciona todos los carruseles
+    const carruseles = document.querySelectorAll('.carrusel');
+
+    carruseles.forEach(carrusel => {
+      const imagenes = carrusel.querySelector('.carrusel-imagenes');
+      const btnPrev = carrusel.querySelector('.btn-prev');
+      const btnNext = carrusel.querySelector('.btn-next');
+
+      btnPrev.addEventListener('click', () => {
+        imagenes.scrollBy({ left: -220, behavior: 'smooth' });
+      });
+
+      btnNext.addEventListener('click', () => {
+        imagenes.scrollBy({ left: 220, behavior: 'smooth' });
+      });
+    });
+  </script>
+   	  		</main>
+			<footer>
+				<div>
+				<h1>Si gustas añadir una receta escribenos!!!</h1>
+				</div>
+			</footer>
+			
+
+			  
+		</body>
+</html>
