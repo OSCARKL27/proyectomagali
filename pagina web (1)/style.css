@@ -1,0 +1,202 @@
+body{
+    font-family: italic;
+    margin: 0;
+    padding: 0;
+    background-image: url(imagenes/ensalada\ \(2\).jpg);
+    background-size : cover; /* Hace que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+.titulo{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: green; 
+    color: white;
+    padding:10px;
+    border-radius: 20px;
+}
+.titulo h1 a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+.menu.central{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}   
+.menu{
+    display: flex;
+}
+.menu-item{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 15px; 
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item 
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px; 
+}
+.menu-item:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+.flotante {
+    position: relative; /* Necesario para el submenú flotante */
+}
+.subtemas-flotante {
+    display: none; /* Ocultamos el submenú por defecto */
+    position: fixed; /* Fijamos el submenú para que abarque toda la pantalla */
+    top: 0;
+    left: 50px;
+    width: 50vw; /* Abarca el 90% del ancho de la ventana */
+    height: 50vh; /* Abarca el 90% de la altura de la ventana */
+    margin: 8vh 8vw; /* Centra el menú con márgenes */
+    background-color: #ffefef; /* Fondo para el menú flotante */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Sombra para el efecto de pantalla */
+    z-index: 1000; /* Para asegurar que el menú esté en primer plano */
+    overflow: auto; /* Permitir scroll si el contenido es grande */
+    padding: 20px; /* Espacio interior */
+    flex-wrap: wrap;
+
+}
+.subtemas-flotante p {
+    color: black;
+    padding: 12px 16px;
+    font-size: 28px;
+    margin: 10px 0; /* Espacio entre enlaces */
+    
+}
+
+.flotante:hover .subtemas-flotante {
+    display: block; /* Mostramos el submenú al pasar el cursor */
+}
+.subtemas-flotante a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+    
+
+}
+.subtemas-flotante a{
+    display: block; /* Asegura que el enlace ocupe todo el ancho del contenedor */
+    width: 100%; /* Hace que el enlace abarque todo el contenedor */
+    color: black;
+    text-decoration: none;
+    padding: 12px 16px; /* Añadir padding para que el área sea suficientemente grande */
+    box-sizing: border-box; /* Para que el padding no afecte el ancho del enlace */
+}
+.contenedor {
+    width: 80%; /* Ancho del contenedor (porcentaje o píxeles) */
+    margin: 0 auto; /* Centrar horizontalmente */
+    padding: 20px; /* Espaciado interno */
+    background-color: #f4f4f4; /* Color de fondo */
+    border: 1px solid #ddd; /* Borde alrededor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efecto visual */
+}
+.elementosP img{
+        width: 300px;
+        height: auto;
+        mix-blend-mode: multiply; /* Prueba otras como screen o darken */
+        align-items: center;
+
+}   
+ main {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+
+  /* Estilo global para todos los h1 */
+  main h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #444;
+    margin: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 10px;
+  }
+
+  /* Estilo del contenedor del carrusel */
+  .carrusel {
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  .carrusel-imagenes {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .carrusel-imagenes::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carrusel-imagenes img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    scroll-snap-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .carrusel-imagenes img:hover {
+    transform: scale(1.1);
+  }
+
+  /* Botones del carrusel */
+  .carrusel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: opacity 0.3s, background-color 0.3s;
+    opacity: 0.8;
+  }
+
+  .carrusel-btn:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .btn-prev {
+    left: 12px;
+  }
+
+  .btn-next {
+    right: 12px;
+  }
+  .contenedor a{
+    color: black;
+    text-decoration: none;
+  }
+  footer div{
+    background-color: wheat;
+    border-radius: 10%;
+    width: fit-content;
+    align-items: center;
+    justify-content:center;
+    display: flex;
+    position: absolute;
+    right: 35%;
+  }
+  
